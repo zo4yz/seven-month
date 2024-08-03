@@ -1,0 +1,24 @@
+body {
+    width: 150px;
+    background-color: #ffb8;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    width: max-content;
+    overflow-x: scroll;
+    gap: 0.2 rem;
+    background-color: #c1cde1;
+}
+.dialog {
+    display: grid;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif:
+}
+

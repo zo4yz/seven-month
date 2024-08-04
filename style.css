@@ -1,24 +1,67 @@
 body {
     width: 150px;
-    background-color: #ffb8;
+    background-color: #ffb8c1;
+    overflow: hidden;
 }
 
 .container {
-    align-items: center;
+  position: absolute;
     display: flex;
-    width: max-content;
+    width: 450px;
+    height: 300px;
     overflow-x: scroll;
-    gap: 0.2 rem;
-    background-color: #c1cde1;
+    gap: 0.2rem;
+    background-color: transparent;
 }
-.dialog {
-    display: grid;
-    background-color: white;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-    flex-direction: column;
-    font-family: Georgia, 'Times New Roman', Times, serif:
+.container-
+  
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+  position: absolute;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  left: 22.5%;
+  top: 310px;
+  text-align: center;
+}
+.front, .dialog {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front {
+  transform: perspective(600px) rotateY(0deg);
+  background-color:lightblue;
+}
+.dialog{
+  background: #b8cde1; 
+  transform: perspective(600px) rotateY(160deg);
+}
+.dialog-back{
+  display: grid;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  top: 25px;
+}
+.sm {
+  margin: 20px 0;
 }
 
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .dialog{
+    transform: perspective(600px) rotateY(0);
+}

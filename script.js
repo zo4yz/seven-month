@@ -4,13 +4,16 @@ $(document).ready(function() {
         e.stopPropagation();
     });
 
-    $('html').click(function(){
+    $('html').click(function() {
         $('.nav-dropdown').hide();
     })
-    $('#nav-toggle').click(function(){
+    $('#nav-toggle').click(function() {
         $('nav ul').slideToggle();
     })
-    $('#nav-toggle').on('click', function(){
+    $('#nav-toggle').on('click', function() {
         this.classList.toggle('active');
+    })
+    $('#nav-toggle').click(function(e) {
+        e.preventDefault();
     });
 });

@@ -7,13 +7,21 @@ $(document).ready(function() {
     $('html').click(function() {
         $('.nav-dropdown').hide();
     })
-    $('#nav-toggle').click(function() {
+    $('#nav-toggle').click(function(e) {
         $('nav ul').slideToggle();
+        e.preventDefault();
+        e.stopPropagation();
     })
     $('#nav-toggle').on('click', function() {
         this.classList.toggle('active');
     })
-    $('#nav-toggle').click(function(e) {
-        e.preventDefault();
+    $(document).click(function(e) {
+        if (!$(e.target).closest('nav').length) {
+            $('.nav-list').slideUp();
+            $('#nav-toggle').removeClass('active');
+        }
+    })
+    $('nav-ul class:S#about').click(function(e) {
+        $('.about').toggle('active');
     });
 });

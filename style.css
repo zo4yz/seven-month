@@ -105,12 +105,13 @@ body {
 }
 .about p {
     margin-top: 17px;
-    left: 100px;
+    left: 120px;
     position: relative;
     top: -100px;
+    margin-bottom: -17px;
 }
 .about a {
-    left: 100px;
+    left: 120px;
     position: relative;
     top: -83px;
     font-weight: bold;
@@ -124,6 +125,28 @@ body {
 .service {
     position: absolute;
     top: 2000px;
+    background-color: lightblue;
+    width: 340px;
+}
+.tag{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.contact{
+    position: absolute;
+    top: 2600px;
+}
+.lyrics{
+    position: absolute;
+    top: 2800px;
+}
+.lyrics img {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border:black ;
 }
 .nav-bar {
     height: 70px;

@@ -9,10 +9,11 @@ body {
     overflow: auto;
     width: 375px;
     height: 0;
+    padding-top:0;
 }
 
-main {
-    position: relative;
+.image {
+    position: absolute;
     width: 400px;
     height: 300px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -65,6 +66,7 @@ main {
     transform: translateY(-50%);
     font: 400 0.85rem helvetica, sans-serif;
     color: white;
+    text-shadow: black;
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
     opacity: 0;
     display: none;
@@ -295,14 +297,14 @@ main {
     float: left;
     padding-top: 100px;
     width: 250px;
-    height: 350px;
+    height: 370px;
     margin-bottom: -100px;
 }
 
 .service {
     left: 30px;
     position: relative;
-    top: 1800px;
+    top: 2000px;
     background-color: lightblue;
     width: 340px;
 }
@@ -396,25 +398,25 @@ main {
 .contact {
     position: absolute;
     top: 3200px;
-    left: 25%;
+    left: 15%;
 }
 
 .tagcontact {
     display: flex;
     list-style: none;
     position: absolute;
-    right: 30%;
-    left: 30%;
-    justify-self: center;
+    left: 20%;
 }
 
 .tagcontact a {
     width: 15vw;
     height: 15vw;
-    font-size: 7vw;
+    text-align: center;
+    font-size: 9vw;
+    left: 50%;
     color: black;
     background-color: white;
-    line-height: 15vw;
+    line-height: 18vw;
     margin: 0 3vw;
     border-radius: 50%;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
@@ -423,9 +425,9 @@ main {
 
 .tagcontact a span {
     position: absolute;
-    top: -70px;
+    top: -80px;
     /* Mengatur posisi teks di atas elemen */
-    left: 50%;
+    left: 20px;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     /* Memberi background agar teks terlihat */
@@ -550,7 +552,7 @@ main {
 }
 
 nav {
-    float: right;
+    float: left;
 }
 
 nav ul {
@@ -613,7 +615,7 @@ nav ul li ul li a {
 
 #nav-toggle {
     position: absolute;
-    left: 50%;
+    left: -300px;
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 15px 0px;
@@ -662,7 +664,7 @@ nav ul li ul li a {
         margin: 0;
         padding: 0;
     }
-    nav {
+    .bar {
         width: 100%;
         padding: 70px 0 15px;
     }
